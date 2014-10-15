@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="loadApp">
+TEST 0.0.4
+	<head>
+		<title>Load up!</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+		<script src="https://code.angularjs.org/1.2.26/angular-route.js"></script>
+		<script src="app.js"></script>
+		
+		<!-- cooper's services -->
+		<script src="js/angular-file-upload-html5-shim.js"></script>
+		<script src="js/angular-file-upload-shim.js"></script>
+		<script src="js/angular-file-upload.js"></script>
+
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+		<link href="css/mobile.css" type="text/css" rel="stylesheet" media="handheld"/>
+		
+		<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, width=device-width" />
+	</head>
+,
+	<body>
+		Input: 
+		<input type="file" id="file" name="file"/>
+		<button ng-click="add()">Add</button>
+		
+		<div class="main" ng-view></div>
+	</body>
+</html>
