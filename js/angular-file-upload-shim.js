@@ -316,6 +316,7 @@ if (!window.FormData || (window.FileAPI && FileAPI.forceLoad)) {
 
 if (!window.FileReader) {
 	window.FileReader = function() {
+		alert('FileReader on the loose!');
 		var _this = this, loadStarted = false;
 		this.listeners = {};
 		this.addEventListener = function(type, fn) {
